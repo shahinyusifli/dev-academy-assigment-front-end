@@ -19,4 +19,6 @@ const GetPizza = ({pizzas}) => {
     
 
 
+
+ 
 export default GetPizza;
