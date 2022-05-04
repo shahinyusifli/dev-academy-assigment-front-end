@@ -4,12 +4,12 @@ const GetPizza = ({pizzas}) => {
     return (
       <div>
       {pizzas.map((item) => (
-      <div key={item.messageId}>
-      <Link to={`/message/${item.messageId}`}>
+      <div key={item.topicName}>
+      <Link to={`/message/${item.topicName}`}>
         <h5>{item.topicName}</h5>
         </Link>
-        <p>{item.messageContent}</p>
-        <p>{item.date}</p>
+        <p>{item.totalMessages}</p>
+        <p>{item.timeOfLastMessage}</p>
       </div>
       ))}
       <Outlet />
